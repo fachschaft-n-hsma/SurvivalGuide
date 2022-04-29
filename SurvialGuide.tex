@@ -2,8 +2,9 @@
 % Body text font is Palatino!
 %
 % https://de.overleaf.com/latex/templates/simple-a5-book-template/gkryymktcyzs
-\documentclass[a5paper,pagesize,10pt,bibtotoc,pointlessnumbers,
+\documentclass[a5paper,pagesize,fontsize=11pt,bibtotoc,pointlessnumbers,
 normalheadings,DIV=9,twoside=false]{scrbook}
+\renewcommand{\familydefault}{phv}
 
 % twoside, openright
 \KOMAoptions{DIV=last}
@@ -45,17 +46,19 @@ normalheadings,DIV=9,twoside=false]{scrbook}
 \begin{titlepage}
 		\centering{
 			{\fontsize{40}{48}\selectfont 
-			A book title}
+			Survivalguide}
 		}\\
 			
 		\vspace{10mm}
-		\centering{\Large{Author Name}}\\
+		\centering{\Large{Fachschaft Informationstechnik}}\\
 		\vspace{\fill}
-		\centering \large{2011}
+		\centering \large{2022}
 \end{titlepage}
 
 
 %=========================================
+
+\input{wichtige_kontakte.tex}
 
 \input{moodlekurse/moodlekurse.tex}
 
@@ -66,5 +69,7 @@ normalheadings,DIV=9,twoside=false]{scrbook}
 \input{wahlfaecher/wahlfaecher.tex}
 
 \input{studiangebote/studiangebote.tex}
+
+\input{glossar.tex}
 
 \end{document}
